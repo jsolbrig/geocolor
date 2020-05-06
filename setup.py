@@ -21,7 +21,7 @@ from setuptools import setup
 import os
 
 setup(
-    name='satpy_geocolor',
+    name='geocolor',
     entry_points={
         'satpy.composites': [
             'geocolor = geocolor',
