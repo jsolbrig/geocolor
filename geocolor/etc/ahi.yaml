@@ -1,0 +1,15 @@
+sensor_name: visir/ahi
+
+composites:
+  geocolor:
+    compositor: !!python/name:satpy.composites.geocolor.GeoColor
+    prerequisites:
+      - name: B01
+      - name: B02
+      - name: B03
+      - name: B04
+      - name: B13
+      - name: satellite_azimuth_angle
+      - name: satellite_zenith_angle
+      - name: solar_azimuth_angle
+      - name: solar_zenith_angle
